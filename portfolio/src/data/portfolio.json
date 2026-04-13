@@ -1,0 +1,59 @@
+{
+  "name": "Your Name",
+  "title": "Full Stack Developer",
+  "bio": "Passionate developer with expertise in building modern web applications. I love creating elegant solutions to complex problems.",
+  "email": "your.email@example.com",
+  "github": "https://github.com/yourusername",
+  "linkedin": "https://linkedin.com/in/yourusername",
+  "twitter": "https://twitter.com/yourusername",
+  "skills": [
+    { "name": "React", "level": 90 },
+    { "name": "TypeScript", "level": 85 },
+    { "name": "Node.js", "level": 80 },
+    { "name": "Go", "level": 75 },
+    { "name": "Python", "level": 70 },
+    { "name": "Docker", "level": 85 },
+    { "name": "Kubernetes", "level": 70 },
+    { "name": "PostgreSQL", "level": 80 }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "E-Commerce Platform",
+      "description": "A full-stack e-commerce solution with React frontend and Go backend.",
+      "tech": ["React", "Go", "PostgreSQL", "Docker"],
+      "link": "https://github.com/yourusername/ecommerce",
+      "image": "https://picsum.photos/seed/project1/600/400"
+    },
+    {
+      "id": 2,
+      "title": "Task Management App",
+      "description": "Real-time collaborative task management with WebSocket.",
+      "tech": ["React", "Node.js", "MongoDB", "Socket.io"],
+      "link": "https://github.com/yourusername/taskapp",
+      "image": "https://picsum.photos/seed/project2/600/400"
+    },
+    {
+      "id": 3,
+      "title": "DevOps Dashboard",
+      "description": "Kubernetes cluster monitoring and management dashboard.",
+      "tech": ["React", "Go", "Prometheus", "Grafana"],
+      "link": "https://github.com/yourusername/k8s-dashboard",
+      "image": "https://picsum.photos/seed/project3/600/400"
+    }
+  ],
+  "experience": [
+    {
+      "company": "Tech Company A",
+      "role": "Senior Developer",
+      "period": "2022 - Present",
+      "description": "Leading development of cloud-native applications."
+    },
+    {
+      "company": "Startup B",
+      "role": "Full Stack Developer",
+      "period": "2020 - 2022",
+      "description": "Built and maintained multiple client projects."
+    }
+  ]
+}
