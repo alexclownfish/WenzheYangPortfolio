@@ -1,28 +1,21 @@
 import { usePortfolio } from '../context/PortfolioContext';
 import { useTheme } from '../context/ThemeContext';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   const { data } = usePortfolio();
   const { theme, setTheme } = useTheme();
 
-  const links = [
-    { to: '/', label: 'Home' },
-    { to: '/about', label: 'About' },
-    { to: '/skills', label: 'Skills' },
-    { to: '/projects', label: 'Projects' },
-    { to: '/contact', label: 'Contact' },
-  ];
-
   return (
     <nav className="navbar-modern">
       <div className="nav-container">
-        <a href="/" className="nav-brand">{data.name}</a>
+        <Link to="/" className="nav-brand">{data.name}</Link>
         <ul className="nav-links">
-          {links.map((link) => (
-            <li key={link.to}>
-              <a href={link.to} className="nav-link">{link.label}</a>
-            </li>
-          ))}
+          <li><Link to="/" className="nav-link">Home</Link></li>
+          <li><Link to="/about" className="nav-link">About</Link></li>
+          <li><Link to="/skills" className="nav-link">Skills</Link></li>
+          <li><Link to="/projects" className="nav-link">Projects</Link></li>
+          <li><Link to="/contact" className="nav-link">Contact</Link></li>
         </ul>
         <div className="theme-switcher">
           <button
