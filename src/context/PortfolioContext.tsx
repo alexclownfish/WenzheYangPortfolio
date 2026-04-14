@@ -65,7 +65,9 @@ export function PortfolioProvider({ children }: { children: ReactNode }) {
     setLoading(true);
     setError(null);
     try {
-      const response = await fetch(`./data/portfolio.json?t=${Date.now()}`);
+      const response = await fetch(`./data/portfolio.json?t=${Date.now()}`, {
+        cache: 'no-store'
+      });
       if (!response.ok) {
         throw new Error('Failed to load portfolio data');
       }
