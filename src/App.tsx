@@ -8,7 +8,7 @@ import Contact from "./pages/Contact";
 
 function App() {
   return (
-    <BrowserRouter basename={import.meta.env.BASE_URL}>
+    <BrowserRouter basename="/WenzheYangPortfolio">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
